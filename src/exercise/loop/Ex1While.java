@@ -1,18 +1,25 @@
 package exercise.loop;
 
-public class Ex1For {
+public class Ex1While {
 
 	public static void main(String[] args) {
 		char[] apb = {'A','B','C','D','E'};
 		int line=5;
-		for(int i=1;i<=line;i++) {
-			for(int j=1;j<=line-i;j++) {
+		int i=1;
+		while(i<=line) {
+			int j=1;
+			while(j<=line-i) {
 				System.out.print(" ");
+				j++;
 			}
-			for(int k=0;k<=i-1;k++) {
+			int k=0;
+			while(k<=i-1) {
 				System.out.print(apb[k]+" ");
+				k++;
 			}
 			System.out.println("");
+			i++;
 		}
 	}
+
 }
